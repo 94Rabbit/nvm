@@ -1,0 +1,27 @@
+windows系统上nvm常用的命令和使用.
+1.下载nvm安装包。
+      地址:https://github.com/coreybutler/nvm-windows/releases
+2.安装nvm。
+       安装(可选择默认,可自定义路径)过后会在环境变量中生成两个环境变量名:1.NVM_HOME   2.NVM_SYMLINK
+         其中NVM_HOME存放的是nvm的安装路径；NVM_SYMLINK存放的是通过nvm安装的node的路径。
+         系统会默认将这两个值加入到环境变量path中。
+3.文件说明
+   在nvm安装的目录下,有个settings.txt文件。
+
+   我的setting.txt文件:
+       root: E:\nvm\nvm     *nvm安装路径*
+       path: C:\Program Files\nodejs    *node版本的路径* 
+       arch: 64 
+       proxy: none 
+       node_mirror: https://npm.taobao.org/mirrors/node/   *使用淘宝镜像*
+       npm_mirror: https://npm.taobao.org/mirrors/npm/    *使用淘宝镜像*
+4.常用的nvm命令:
+    nvm version         // 查看nvm版本
+    nvm install 4.6.2   // 安装node4.6.2版本（附带安装npm）
+    nvm uninstall 4.6.2 // 卸载node4.6.2版本
+    nvm list            // 查看node版本
+    nvm use 4.6.2       // 将node版本切换到4.6.2版本
+    nvm root　　　　     // 查看nvm安装路径 
+    nvm install latest  //下载最新的node版本和与之对应的npm版本
+    *当你键入这些命令时可能会需要一点时间才能生效(*￣︶￣)*。
+         
